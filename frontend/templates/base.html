@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	    <meta name="description" content="Simple application with archive earthquakes." />
+	    <meta name="keywords" content="Eartquake, Richter, Map, Deaths, Longitude, Latitude, Tsunami, Disaster" />
+	    <meta name="author" content="Marcin Maciuszek" />
+
+		<title>Earthquake</title>
+
+		<link rel="stylesheet" type="text/css" href="../static/css/main.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/fontello.css">
+		<link rel="stylesheet" type="text/css" href="../static/css/animation.css">
+		<link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" type="image/png" href="../static/img/earth.png">
+	</head>
+
+	<body>		
+		{% block content %}
+		{% endblock %}
+		
+		{% load static %}
+		<script src="{% static 'js/main.js' %}"></script>
+	</body>
+</html>

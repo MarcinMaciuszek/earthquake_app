@@ -1,0 +1,299 @@
+body {
+	margin: 0;
+	background-image: url(../img/light-grey-terrazzo.png); /* Background pattern from Toptal Subtle Patterns */
+	font-family: 'Unica One', cursive;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+h1 {
+	margin: 0;
+}
+
+/* LOADING */
+
+#loading {
+	font-size: 48px;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* HEADER */
+
+#logo {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+}
+
+#filters {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.listLabel {
+	display: inline-block;
+	vertical-align: middle;
+	margin: auto 15px auto 15px;
+	vertical-align: middle;
+}
+
+#year, #death {
+	font-family: 'Unica One', cursive;
+	font-weight: 400;
+	font-size: 18px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+}
+
+/* MAIN */
+
+main {
+	position: relative;
+	width: 75%;
+	margin: 0;
+	float: left;
+}
+
+.mapGrid {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* POINT */
+
+.point {
+	position: absolute;
+	margin: auto;
+	padding: 0;
+
+}
+
+.point:hover {
+	color: white;
+	cursor: pointer;
+}
+
+.highlightPoint {
+	color: cyan !important;
+}
+
+.microPoint {
+	color: #00ff00;
+}
+
+.minorPoint {
+	color: #aaee00;
+}
+
+.lightPoint {
+	color: #dce400;
+}
+
+.moderatePoint {
+	color: #dc8700;
+}
+
+.strongPoint {
+	color: #dc4500;
+}
+
+.majorPoint {
+	color: #cc0800;
+}
+
+.greatPoint {
+	color: #a30018;
+}
+
+/* NAV */
+
+nav {	
+	width: 24%;
+	float: left;
+	padding-left: 1%;
+	margin-bottom: 50px;
+}
+
+#detailsBar {
+	background-color: white;
+	padding: 8px;
+	margin-right: 8px;
+}
+
+#richterBar {
+	background-color: gray;
+	padding: 8px;
+	margin-top: 8px;
+	margin-right: 8px;
+	height: auto;
+}
+
+table {
+	width: 100%;
+}
+
+th {
+	padding: 5px;
+	text-align: left;
+	width: 40%;
+}
+
+td {
+	padding: 5px;
+	text-align: center;
+	width: 60%;
+	word-break: break-all;
+}
+
+.region {
+	height: 54px;
+}
+
+.regionCell {
+	font-size: 14px;
+}
+
+.microBar {
+	background-color: #00ff00 !important;
+}
+
+.minorBar {
+	background-color: #aaee00 !important;
+}
+
+.lightBar {
+	background-color: #dce400 !important;
+}
+
+.moderateBar {
+	background-color: #dc8700 !important;
+}
+
+.strongBar {
+	background-color: #dc4500 !important;
+}
+
+.majorBar {
+	background-color: #cc0800 !important;
+}
+
+.greatBar {
+	background-color: #a30018 !important;
+}
+
+/* FOOTER */
+
+footer {
+	background-color: black;
+	color: white;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	padding: 10px;
+	width: 100%;
+	margin-top: 70px;
+}
+
+/* OTHER */
+
+.clearFloat {
+	clear: both;
+}
+
+/* 1280px */
+
+@media only screen and (max-width: 1280px)
+{
+	main {
+		width: 100%;
+	}
+
+	nav {
+		width: 100%;
+		margin-top: 10px;
+		padding: 0;
+	}
+
+	#detailsBar {
+		width: 66%;
+		margin: 0 1% 0 1%;
+		padding: 1%;
+		float: left;
+	}
+
+	#richterBar {
+		width: 26%;
+		margin: 0 1% 0 1%;
+		padding: 1%;
+		float: left;
+	}
+
+	.region {
+		min-height: 34px;
+	}
+}
+
+@media only screen and (max-width: 768px)
+{
+	body, .regionCell {
+		font-size: 12px;
+	}
+
+	.region {
+		height: auto;
+	}
+
+	main {
+		width: 100%;
+	}
+
+	nav {
+		width: 100%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding: 0;
+	}
+
+	.listLabel {
+		margin: auto 2px auto 8px;
+	}
+
+	#year, #death {
+		font-size: 12px;
+		margin: 2px;
+	}
+
+	#detailsBar {
+		width: 90%;
+		margin: 0 3% 10px 3%;
+		padding: 2%;
+		float: left;
+	}
+
+	#richterBar {
+		width: 90%;
+		margin: 0 3% 10px 3%;
+		padding: 2%;
+		clear: both;
+	}
+
+	footer {
+		position: static;
+		margin-top: 0;
+		padding: 10px 0 10px 0;
+	}
+}
+
+@media only screen and (max-width: 420px)
+{
+	.listLabel {
+		display: block;
+	}
+}
